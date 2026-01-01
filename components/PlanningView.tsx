@@ -300,11 +300,8 @@ export const PlanningView: React.FC<Props> = ({ currentProgram }) => {
                         <div>
                             <h3 className="text-white font-bold text-lg">Veri Bulunamadı</h3>
                             <p className="text-zinc-400 text-xs mt-2 leading-relaxed">
-                                Vercel'e veya yeni bir cihaza geçtiyseniz verileriniz otomatik gelmez. Eski cihazınızdan verileri yedekleyip buraya yükleyebilirsiniz.
+                                Henüz bir program oluşturmadınız.
                             </p>
-                        </div>
-                        <div className="p-3 bg-black/40 rounded-xl border border-zinc-800/50 text-xs text-zinc-500">
-                            Ayarlar &gt; Veri Yönetimi &gt; Veri Yükle
                         </div>
                     </div>
                 </div>

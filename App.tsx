@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { Dumbbell, ChevronLeft, ArrowRight, ChevronRight, Settings, Play, BarChart3, Trophy, Clock, Edit2, Plus, Trash2, X, Check, Layers, Activity, Calendar, ChevronDown, ChevronUp, CheckCircle2, GripVertical, CalendarDays, Coffee } from 'lucide-react';
+import { Dumbbell, ChevronLeft, ArrowRight, ChevronRight, Settings, Play, Trophy, Clock, Edit2, Plus, Trash2, Check, Layers, Calendar, ChevronDown, CheckCircle2, GripVertical, CalendarDays, Coffee } from 'lucide-react';
 import { ExerciseCard } from './components/ExerciseCard';
 import { WorkoutTimer } from './components/WorkoutTimer';
 import { RestTimer } from './components/RestTimer';

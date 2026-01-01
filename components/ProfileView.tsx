@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { Calendar as CalendarIcon, User, Clock, Trophy, Timer, Zap, Activity, Dumbbell, PowerOff, Package, ChevronRight, AlertTriangle, Check, X, Info, Layers, ChevronUp, ChevronDown, Coffee, PenTool, Plus } from 'lucide-react';
+import { Calendar as CalendarIcon, Trophy, Timer, Activity, Package, ChevronRight, AlertTriangle, X, Layers, Coffee, PenTool, Plus } from 'lucide-react';
 import { getWorkoutLogs, getUserSettings, saveUserSettings, saveProgram } from '../services/storageService';
 import { UserSettings, WorkoutDay } from '../types';
 import { PRESET_PROGRAMS, PresetProgram } from '../constants';
@@ -35,11 +35,6 @@ export const ProfileView: React.FC<Props> = ({ onProgramChange, onCreateNew }) =
       'İleri': PRESET_PROGRAMS.filter(p => p.level === 'İleri')
     };
   }, []);
-
-  const handleSaveSettings = () => {
-    saveUserSettings(settings);
-    setEditMode(false);
-  };
 
   const updateSetting = (key: keyof UserSettings, value: any) => {
     const newSettings = { ...settings, [key]: value };
