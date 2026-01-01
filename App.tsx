@@ -19,7 +19,7 @@ const TabItem: React.FC<{ icon: React.ReactNode; label: string; isActive: boolea
     className={`flex flex-col items-center justify-center w-full h-full transition-all duration-200 active:scale-95 ${isActive ? 'text-primary' : 'text-zinc-500 hover:text-zinc-300'}`}
   >
     <div className={`transition-transform duration-200 ${isActive ? '-translate-y-0.5' : ''}`}>
-        {React.cloneElement(icon as React.ReactElement, { size: 24, strokeWidth: isActive ? 2.5 : 2 })}
+        {React.cloneElement(icon as React.ReactElement<any>, { size: 24, strokeWidth: isActive ? 2.5 : 2 })}
     </div>
     <span className={`text-[10px] font-bold mt-0.5 transition-colors ${isActive ? 'text-primary' : 'text-zinc-600'}`}>
         {label}
